@@ -1,9 +1,9 @@
 set nu
-set cindent
 set ts=4
 set sw=4
 set expandtab
 let g:molokai_original=1
+:filetype indent on 
 
 autocmd BufNewFile *.cpp 0r ~/.vim/template/header.cpp
 
