@@ -15,10 +15,10 @@ map <F5> :call CompileRunGcc()<CR>
 func! CompileRunGcc()
     exec "w"
     if &filetype == 'c'
-        exec "!gcc -O2 -Wall -g % -o %<"
+        exec "!gcc -Wall -g % -o %<"
         exec "!time ./%<"
     elseif &filetype == 'cpp'
-        exec "!g++ -O2 -Wall -g % -o %<"
+        exec "!g++ -Wall -g % -o %<"
         exec "!time ./%<"
     elseif &filetype == 'sh'
         :!time bash %
